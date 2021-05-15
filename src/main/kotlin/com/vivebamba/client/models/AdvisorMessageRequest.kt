@@ -11,21 +11,21 @@
 */
 package com.vivebamba.client.models
 
+import com.vivebamba.client.models.AdvisorUser
+import com.vivebamba.client.models.Message
 
 import com.squareup.moshi.Json
 
 /**
  * 
- * @param type Message type
- * @param message The text of the message
+ * @param customer 
+ * @param message 
  */
 
-data class Message (
-    /* Message type */
-    @Json(name = "type")
-    val type: kotlin.String,
-    /* The text of the message */
+data class AdvisorMessageRequest (
+    @Json(name = "customer")
+    val customer: AdvisorUser,
     @Json(name = "message")
-    val message: kotlin.String
+    val message: Message
 )
 

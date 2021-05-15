@@ -16,12 +16,12 @@ import com.squareup.moshi.Json
 
 /**
  * 
- * @param description The error description
+ * @param errors The error description
  */
 
 data class ErrorResponse (
     /* The error description */
-    @Json(name = "description")
-    val description: kotlin.String? = null
+    @Json(name = "errors")
+    val errors: kotlin.collections.List<kotlin.String>? = null
 )
 

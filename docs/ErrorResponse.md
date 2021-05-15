@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **kotlin.String** | The error description |  [optional]
+**errors** | **kotlin.collections.List&lt;kotlin.String&gt;** | The error description |  [optional]
 
 
 

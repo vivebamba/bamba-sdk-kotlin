@@ -16,16 +16,11 @@ import com.squareup.moshi.Json
 
 /**
  * 
- * @param type Message type
- * @param message The text of the message
+ * @param success 
  */
 
-data class Message (
-    /* Message type */
-    @Json(name = "type")
-    val type: kotlin.String,
-    /* The text of the message */
-    @Json(name = "message")
-    val message: kotlin.String
+data class InlineResponse2001 (
+    @Json(name = "success")
+    val success: kotlin.String? = null
 )
 

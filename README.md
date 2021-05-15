@@ -35,8 +35,7 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*BambaAgentApi* | [**bambaAgentMessagePost**](docs/BambaAgentApi.md#bambaagentmessagepost) | **POST** /bamba-agent/message | Bamba agent
-*CustomerApi* | [**customerCustomerIdServiceGet**](docs/CustomerApi.md#customercustomeridserviceget) | **GET** /customer/{customerId}/service | Get customer services
+*BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
 *StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
 *StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
 
@@ -44,9 +43,12 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
+ - [com.vivebamba.client.models.AdvisorMessageRequest](docs/AdvisorMessageRequest.md)
+ - [com.vivebamba.client.models.AdvisorUser](docs/AdvisorUser.md)
  - [com.vivebamba.client.models.Customer](docs/Customer.md)
  - [com.vivebamba.client.models.ErrorResponse](docs/ErrorResponse.md)
  - [com.vivebamba.client.models.InlineResponse200](docs/InlineResponse200.md)
+ - [com.vivebamba.client.models.InlineResponse2001](docs/InlineResponse2001.md)
  - [com.vivebamba.client.models.Message](docs/Message.md)
  - [com.vivebamba.client.models.Order](docs/Order.md)
  - [com.vivebamba.client.models.OrderProducts](docs/OrderProducts.md)

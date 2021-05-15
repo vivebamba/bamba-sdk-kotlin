@@ -11,8 +11,9 @@
 */
 package com.vivebamba.client.apis
 
+import com.vivebamba.client.models.AdvisorMessageRequest
 import com.vivebamba.client.models.ErrorResponse
-import com.vivebamba.client.models.Message
+import com.vivebamba.client.models.InlineResponse2001
 
 import com.vivebamba.client.infrastructure.ApiClient
 import com.vivebamba.client.infrastructure.ClientException
@@ -26,7 +27,7 @@ import com.vivebamba.client.infrastructure.ResponseType
 import com.vivebamba.client.infrastructure.Success
 import com.vivebamba.client.infrastructure.toMultiValue
 
-class BambaAgentApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) {
+class BambaAdvisorApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) {
     companion object {
         @JvmStatic
         val defaultBasePath: String by lazy {
@@ -35,24 +36,25 @@ class BambaAgentApi(basePath: kotlin.String = defaultBasePath) : ApiClient(baseP
     }
 
     /**
-    * Bamba agent
-    * All related with Bamba Agent
-    * @param message  (optional)
-    * @return void
+    * Send messages to the Bamba Advisor
+    * Send mesages to the Bamba Advisor from new or existing customers
+    * @param advisorMessageRequest  (optional)
+    * @return InlineResponse2001
     * @throws UnsupportedOperationException If the API returns an informational or redirection response
     * @throws ClientException If the API returns a client error response
     * @throws ServerException If the API returns a server error response
     */
+    @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun bambaAgentMessagePost(message: Message?) : Unit {
-        val localVariableConfig = bambaAgentMessagePostRequestConfig(message = message)
+    fun advisorMessagePost(advisorMessageRequest: AdvisorMessageRequest?) : InlineResponse2001 {
+        val localVariableConfig = advisorMessagePostRequestConfig(advisorMessageRequest = advisorMessageRequest)
 
-        val localVarResponse = request<Any?>(
+        val localVarResponse = request<InlineResponse2001>(
             localVariableConfig
         )
 
         return when (localVarResponse.responseType) {
-            ResponseType.Success -> Unit
+            ResponseType.Success -> (localVarResponse as Success<*>).data as InlineResponse2001
             ResponseType.Informational -> throw UnsupportedOperationException("Client does not support Informational responses.")
             ResponseType.Redirection -> throw UnsupportedOperationException("Client does not support Redirection responses.")
             ResponseType.ClientError -> {
@@ -67,19 +69,19 @@ class BambaAgentApi(basePath: kotlin.String = defaultBasePath) : ApiClient(baseP
     }
 
     /**
-    * To obtain the request config of the operation bambaAgentMessagePost
+    * To obtain the request config of the operation advisorMessagePost
     *
-    * @param message  (optional)
+    * @param advisorMessageRequest  (optional)
     * @return RequestConfig
     */
-    fun bambaAgentMessagePostRequestConfig(message: Message?) : RequestConfig {
-        val localVariableBody: kotlin.Any? = message
+    fun advisorMessagePostRequestConfig(advisorMessageRequest: AdvisorMessageRequest?) : RequestConfig {
+        val localVariableBody: kotlin.Any? = advisorMessageRequest
         val localVariableQuery: MultiValueMap = mutableMapOf()
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
         
         val localVariableConfig = RequestConfig(
             method = RequestMethod.POST,
-            path = "/bamba-agent/message",
+            path = "/advisor/message",
             query = localVariableQuery,
             headers = localVariableHeaders,
             body = localVariableBody
