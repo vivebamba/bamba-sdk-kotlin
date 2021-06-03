@@ -11,9 +11,8 @@
 */
 package com.vivebamba.client.apis
 
-import com.vivebamba.client.models.AdvisorMessageRequest
 import com.vivebamba.client.models.ErrorResponse
-import com.vivebamba.client.models.InlineResponse2001
+import com.vivebamba.client.models.Service
 
 import com.vivebamba.client.infrastructure.ApiClient
 import com.vivebamba.client.infrastructure.ClientException
@@ -27,7 +26,7 @@ import com.vivebamba.client.infrastructure.ResponseType
 import com.vivebamba.client.infrastructure.Success
 import com.vivebamba.client.infrastructure.toMultiValue
 
-class BambaAdvisorApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) {
+class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) {
     companion object {
         @JvmStatic
         val defaultBasePath: String by lazy {
@@ -36,25 +35,25 @@ class BambaAdvisorApi(basePath: kotlin.String = defaultBasePath) : ApiClient(bas
     }
 
     /**
-    * Send messages to the Bamba Advisor
-    * Send mesages to the Bamba Advisor from new or existing customers
-    * @param advisorMessageRequest  (optional)
-    * @return InlineResponse2001
+    * Get customer services
+    * Get all customer services
+    * @param customerId Bamba customer unique identifier 
+    * @return Service
     * @throws UnsupportedOperationException If the API returns an informational or redirection response
     * @throws ClientException If the API returns a client error response
     * @throws ServerException If the API returns a server error response
     */
     @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun advisorMessagePost(advisorMessageRequest: AdvisorMessageRequest?) : InlineResponse2001 {
-        val localVariableConfig = advisorMessagePostRequestConfig(advisorMessageRequest = advisorMessageRequest)
+    fun customerCustomerIdServicesGet(customerId: kotlin.Int) : Service {
+        val localVariableConfig = customerCustomerIdServicesGetRequestConfig(customerId = customerId)
 
-        val localVarResponse = request<InlineResponse2001>(
+        val localVarResponse = request<Service>(
             localVariableConfig
         )
 
         return when (localVarResponse.responseType) {
-            ResponseType.Success -> (localVarResponse as Success<*>).data as InlineResponse2001
+            ResponseType.Success -> (localVarResponse as Success<*>).data as Service
             ResponseType.Informational -> throw UnsupportedOperationException("Client does not support Informational responses.")
             ResponseType.Redirection -> throw UnsupportedOperationException("Client does not support Redirection responses.")
             ResponseType.ClientError -> {
@@ -69,19 +68,19 @@ class BambaAdvisorApi(basePath: kotlin.String = defaultBasePath) : ApiClient(bas
     }
 
     /**
-    * To obtain the request config of the operation advisorMessagePost
+    * To obtain the request config of the operation customerCustomerIdServicesGet
     *
-    * @param advisorMessageRequest  (optional)
+    * @param customerId Bamba customer unique identifier 
     * @return RequestConfig
     */
-    fun advisorMessagePostRequestConfig(advisorMessageRequest: AdvisorMessageRequest?) : RequestConfig {
-        val localVariableBody: kotlin.Any? = advisorMessageRequest
+    fun customerCustomerIdServicesGetRequestConfig(customerId: kotlin.Int) : RequestConfig {
+        val localVariableBody: kotlin.Any? = null
         val localVariableQuery: MultiValueMap = mutableMapOf()
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
         
         val localVariableConfig = RequestConfig(
-            method = RequestMethod.POST,
-            path = "/advisor/message",
+            method = RequestMethod.GET,
+            path = "/customer/{customerId}/services".replace("{"+"customerId"+"}", "$customerId"),
             query = localVariableQuery,
             headers = localVariableHeaders,
             body = localVariableBody

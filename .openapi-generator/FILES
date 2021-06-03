@@ -5,6 +5,7 @@ docs/AdvisorMessageRequest.md
 docs/AdvisorUser.md
 docs/BambaAdvisorApi.md
 docs/Customer.md
+docs/CustomerApi.md
 docs/ErrorResponse.md
 docs/InlineResponse200.md
 docs/InlineResponse2001.md
@@ -21,6 +22,7 @@ gradlew
 gradlew.bat
 settings.gradle
 src/main/kotlin/com/vivebamba/client/apis/BambaAdvisorApi.kt
+src/main/kotlin/com/vivebamba/client/apis/CustomerApi.kt
 src/main/kotlin/com/vivebamba/client/apis/StoreApi.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiAbstractions.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiClient.kt
