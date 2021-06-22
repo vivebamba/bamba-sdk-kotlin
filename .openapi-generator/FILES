@@ -16,6 +16,7 @@ docs/Product.md
 docs/ProductBundleItems.md
 docs/Service.md
 docs/StoreApi.md
+docs/Subscription.md
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
@@ -52,3 +53,4 @@ src/main/kotlin/com/vivebamba/client/models/OrderProducts.kt
 src/main/kotlin/com/vivebamba/client/models/Product.kt
 src/main/kotlin/com/vivebamba/client/models/ProductBundleItems.kt
 src/main/kotlin/com/vivebamba/client/models/Service.kt
+src/main/kotlin/com/vivebamba/client/models/Subscription.kt

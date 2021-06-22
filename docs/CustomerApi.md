@@ -5,11 +5,12 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**customerCustomerIdServicesGet**](CustomerApi.md#customerCustomerIdServicesGet) | **GET** /customer/{customerId}/services | Get customer services
+[**customerCustomerIdServicesSkuCancelGet**](CustomerApi.md#customerCustomerIdServicesSkuCancelGet) | **GET** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
 
 
 <a name="customerCustomerIdServicesGet"></a>
 # **customerCustomerIdServicesGet**
-> Service customerCustomerIdServicesGet(customerId)
+> Subscription customerCustomerIdServicesGet(customerId)
 
 Get customer services
 
@@ -24,7 +25,7 @@ Get all customer services
 val apiInstance = CustomerApi()
 val customerId : kotlin.Int = 56 // kotlin.Int | Bamba customer unique identifier
 try {
-    val result : Service = apiInstance.customerCustomerIdServicesGet(customerId)
+    val result : Subscription = apiInstance.customerCustomerIdServicesGet(customerId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling CustomerApi#customerCustomerIdServicesGet")
@@ -43,7 +44,59 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Service**](Service.md)
+[**Subscription**](Subscription.md)
+
+### Authorization
+
+
+Configure ApiKeyAuth:
+    ApiClient.apiKey["x-api-key"] = ""
+    ApiClient.apiKeyPrefix["x-api-key"] = ""
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="customerCustomerIdServicesSkuCancelGet"></a>
+# **customerCustomerIdServicesSkuCancelGet**
+> Subscription customerCustomerIdServicesSkuCancelGet(customerId, sku)
+
+Cancel customer services
+
+Cancel customer services
+
+### Example
+```kotlin
+// Import classes:
+//import com.vivebamba.client.infrastructure.*
+//import com.vivebamba.client.models.*
+
+val apiInstance = CustomerApi()
+val customerId : kotlin.String = customerId_example // kotlin.String | Bamba customer unique identifier
+val sku : kotlin.String = sku_example // kotlin.String | Service sku
+try {
+    val result : Subscription = apiInstance.customerCustomerIdServicesSkuCancelGet(customerId, sku)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling CustomerApi#customerCustomerIdServicesSkuCancelGet")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling CustomerApi#customerCustomerIdServicesSkuCancelGet")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **kotlin.String**| Bamba customer unique identifier |
+ **sku** | **kotlin.String**| Service sku |
+
+### Return type
+
+[**Subscription**](Subscription.md)
 
 ### Authorization
 

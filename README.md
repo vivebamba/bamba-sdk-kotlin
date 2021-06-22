@@ -37,6 +37,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
 *CustomerApi* | [**customerCustomerIdServicesGet**](docs/CustomerApi.md#customercustomeridservicesget) | **GET** /customer/{customerId}/services | Get customer services
+*CustomerApi* | [**customerCustomerIdServicesSkuCancelGet**](docs/CustomerApi.md#customercustomeridservicesskucancelget) | **GET** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
 *StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
 *StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
 
@@ -56,6 +57,7 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.Product](docs/Product.md)
  - [com.vivebamba.client.models.ProductBundleItems](docs/ProductBundleItems.md)
  - [com.vivebamba.client.models.Service](docs/Service.md)
+ - [com.vivebamba.client.models.Subscription](docs/Subscription.md)
 
 
 <a name="documentation-for-authorization"></a>
