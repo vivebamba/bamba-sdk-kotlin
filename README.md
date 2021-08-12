@@ -37,7 +37,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
 *CustomerApi* | [**customerCustomerIdServicesGet**](docs/CustomerApi.md#customercustomeridservicesget) | **GET** /customer/{customerId}/services | Get customer services
-*CustomerApi* | [**customerCustomerIdServicesSkuCancelGet**](docs/CustomerApi.md#customercustomeridservicesskucancelget) | **GET** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+*CustomerApi* | [**customerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#customercustomeridservicesskucancelput) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
 *StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
 *StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
 

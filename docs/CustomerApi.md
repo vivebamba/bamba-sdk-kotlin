@@ -5,7 +5,7 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**customerCustomerIdServicesGet**](CustomerApi.md#customerCustomerIdServicesGet) | **GET** /customer/{customerId}/services | Get customer services
-[**customerCustomerIdServicesSkuCancelGet**](CustomerApi.md#customerCustomerIdServicesSkuCancelGet) | **GET** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+[**customerCustomerIdServicesSkuCancelPut**](CustomerApi.md#customerCustomerIdServicesSkuCancelPut) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
 
 
 <a name="customerCustomerIdServicesGet"></a>
@@ -58,9 +58,9 @@ Configure ApiKeyAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="customerCustomerIdServicesSkuCancelGet"></a>
-# **customerCustomerIdServicesSkuCancelGet**
-> Subscription customerCustomerIdServicesSkuCancelGet(customerId, sku)
+<a name="customerCustomerIdServicesSkuCancelPut"></a>
+# **customerCustomerIdServicesSkuCancelPut**
+> Subscription customerCustomerIdServicesSkuCancelPut(customerId, sku)
 
 Cancel customer services
 
@@ -76,13 +76,13 @@ val apiInstance = CustomerApi()
 val customerId : kotlin.String = customerId_example // kotlin.String | Bamba customer unique identifier
 val sku : kotlin.String = sku_example // kotlin.String | Service sku
 try {
-    val result : Subscription = apiInstance.customerCustomerIdServicesSkuCancelGet(customerId, sku)
+    val result : Subscription = apiInstance.customerCustomerIdServicesSkuCancelPut(customerId, sku)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CustomerApi#customerCustomerIdServicesSkuCancelGet")
+    println("4xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CustomerApi#customerCustomerIdServicesSkuCancelGet")
+    println("5xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
     e.printStackTrace()
 }
 ```
