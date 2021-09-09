@@ -54,6 +54,7 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.Message](docs/Message.md)
  - [com.vivebamba.client.models.Order](docs/Order.md)
  - [com.vivebamba.client.models.OrderProducts](docs/OrderProducts.md)
+ - [com.vivebamba.client.models.PaymentParams](docs/PaymentParams.md)
  - [com.vivebamba.client.models.Product](docs/Product.md)
  - [com.vivebamba.client.models.ProductBundleItems](docs/ProductBundleItems.md)
  - [com.vivebamba.client.models.Service](docs/Service.md)

@@ -12,6 +12,7 @@ docs/InlineResponse2001.md
 docs/Message.md
 docs/Order.md
 docs/OrderProducts.md
+docs/PaymentParams.md
 docs/Product.md
 docs/ProductBundleItems.md
 docs/Service.md
@@ -50,6 +51,7 @@ src/main/kotlin/com/vivebamba/client/models/InlineResponse2001.kt
 src/main/kotlin/com/vivebamba/client/models/Message.kt
 src/main/kotlin/com/vivebamba/client/models/Order.kt
 src/main/kotlin/com/vivebamba/client/models/OrderProducts.kt
+src/main/kotlin/com/vivebamba/client/models/PaymentParams.kt
 src/main/kotlin/com/vivebamba/client/models/Product.kt
 src/main/kotlin/com/vivebamba/client/models/ProductBundleItems.kt
 src/main/kotlin/com/vivebamba/client/models/Service.kt
