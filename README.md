@@ -59,6 +59,8 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.OrderProducts](docs/OrderProducts.md)
  - [com.vivebamba.client.models.PaymentParams](docs/PaymentParams.md)
  - [com.vivebamba.client.models.Product](docs/Product.md)
+ - [com.vivebamba.client.models.ProductDescription](docs/ProductDescription.md)
+ - [com.vivebamba.client.models.ProductDetails](docs/ProductDetails.md)
  - [com.vivebamba.client.models.Service](docs/Service.md)
  - [com.vivebamba.client.models.Subscription](docs/Subscription.md)
 

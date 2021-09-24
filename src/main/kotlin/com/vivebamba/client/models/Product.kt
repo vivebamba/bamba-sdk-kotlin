@@ -11,7 +11,7 @@
 */
 package com.vivebamba.client.models
 
-import com.vivebamba.client.models.AnyType
+import com.vivebamba.client.models.ProductDescription
 
 import com.squareup.moshi.Json
 
@@ -22,7 +22,7 @@ import com.squareup.moshi.Json
  * @param price The price of the product
  * @param image Image of the product
  * @param brief Plan benefit summary
- * @param description 
+ * @param description Commercial information of the product by sections, the number of elements of each array is dynamic
  * @param terms Link to terms and conditions detailed by product
  */
 
@@ -42,8 +42,9 @@ data class Product (
     /* Plan benefit summary */
     @Json(name = "brief")
     val brief: kotlin.String? = null,
+    /* Commercial information of the product by sections, the number of elements of each array is dynamic */
     @Json(name = "description")
-    val description: kotlin.collections.List<AnyType>? = null,
+    val description: kotlin.collections.List<ProductDescription>? = null,
     /* Link to terms and conditions detailed by product */
     @Json(name = "terms")
     val terms: kotlin.String? = null
