@@ -11,7 +11,7 @@
 */
 package com.vivebamba.client.models
 
-import com.vivebamba.client.models.AnyOfLessThanSectionWhatIncludesCommaSectionWhatNotIncludesGreaterThan
+import com.vivebamba.client.models.AnyType
 
 import com.squareup.moshi.Json
 
@@ -43,7 +43,7 @@ data class Product (
     @Json(name = "brief")
     val brief: kotlin.String? = null,
     @Json(name = "description")
-    val description: kotlin.collections.List<AnyOfLessThanSectionWhatIncludesCommaSectionWhatNotIncludesGreaterThan>? = null,
+    val description: kotlin.collections.List<AnyType>? = null,
     /* Link to terms and conditions detailed by product */
     @Json(name = "terms")
     val terms: kotlin.String? = null

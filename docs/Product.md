@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **price** | **kotlin.Double** | The price of the product |  [optional]
 **image** | **kotlin.String** | Image of the product |  [optional]
 **brief** | **kotlin.String** | Plan benefit summary |  [optional]
-**description** | [**kotlin.collections.List&lt;AnyOfLessThanSectionWhatIncludesCommaSectionWhatNotIncludesGreaterThan&gt;**](AnyOfLessThanSectionWhatIncludesCommaSectionWhatNotIncludesGreaterThan.md) |  |  [optional]
+**description** | [**kotlin.collections.List&lt;AnyType&gt;**](AnyType.md) |  |  [optional]
 **terms** | **kotlin.String** | Link to terms and conditions detailed by product |  [optional]
 
 
