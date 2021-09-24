@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**v1StoreOrdersPost**](StoreApi.md#v1StoreOrdersPost) | **POST** /v1/store/orders | Place an order
-[**v1StoreProductsGet**](StoreApi.md#v1StoreProductsGet) | **GET** /v1/store/products | Get products
+[**storeOrdersPost**](StoreApi.md#storeOrdersPost) | **POST** /store/orders | Place an order
+[**storeProductsGet**](StoreApi.md#storeProductsGet) | **GET** /store/products | Get products
 
 
-<a name="v1StoreOrdersPost"></a>
-# **v1StoreOrdersPost**
-> InlineResponse200 v1StoreOrdersPost(order)
+<a name="storeOrdersPost"></a>
+# **storeOrdersPost**
+> InlineResponse200 storeOrdersPost(order)
 
 Place an order
 
@@ -25,13 +25,13 @@ Place an order
 val apiInstance = StoreApi()
 val order : Order =  // Order | 
 try {
-    val result : InlineResponse200 = apiInstance.v1StoreOrdersPost(order)
+    val result : InlineResponse200 = apiInstance.storeOrdersPost(order)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling StoreApi#v1StoreOrdersPost")
+    println("4xx response calling StoreApi#storeOrdersPost")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling StoreApi#v1StoreOrdersPost")
+    println("5xx response calling StoreApi#storeOrdersPost")
     e.printStackTrace()
 }
 ```
@@ -58,9 +58,9 @@ Configure ApiKeyAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="v1StoreProductsGet"></a>
-# **v1StoreProductsGet**
-> kotlin.collections.List&lt;Product&gt; v1StoreProductsGet()
+<a name="storeProductsGet"></a>
+# **storeProductsGet**
+> kotlin.collections.List&lt;Product&gt; storeProductsGet()
 
 Get products
 
@@ -74,13 +74,13 @@ Retrieve all products
 
 val apiInstance = StoreApi()
 try {
-    val result : kotlin.collections.List<Product> = apiInstance.v1StoreProductsGet()
+    val result : kotlin.collections.List<Product> = apiInstance.storeProductsGet()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling StoreApi#v1StoreProductsGet")
+    println("4xx response calling StoreApi#storeProductsGet")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling StoreApi#v1StoreProductsGet")
+    println("5xx response calling StoreApi#storeProductsGet")
     e.printStackTrace()
 }
 ```

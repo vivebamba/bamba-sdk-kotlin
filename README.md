@@ -35,16 +35,11 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*BambaAdvisorApi* | [**v1AdvisorMessagePost**](docs/BambaAdvisorApi.md#v1advisormessagepost) | **POST** /v1/advisor/message | Send messages to the Bamba Advisor
-*CustomerApi* | [**v1CustomerCustomerIdServicesGet**](docs/CustomerApi.md#v1customercustomeridservicesget) | **GET** /v1/customer/{customerId}/services | Get customer services
-*CustomerApi* | [**v1CustomerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#v1customercustomeridservicesskucancelput) | **PUT** /v1/customer/{customerId}/services/{sku}/cancel | Cancel customer services
-*StoreApi* | [**v1StoreOrdersPost**](docs/StoreApi.md#v1storeorderspost) | **POST** /v1/store/orders | Place an order
-*StoreApi* | [**v1StoreProductsGet**](docs/StoreApi.md#v1storeproductsget) | **GET** /v1/store/products | Get products
-*V1Api* | [**v1AdvisorMessagePost**](docs/V1Api.md#v1advisormessagepost) | **POST** /v1/advisor/message | Send messages to the Bamba Advisor
-*V1Api* | [**v1CustomerCustomerIdServicesGet**](docs/V1Api.md#v1customercustomeridservicesget) | **GET** /v1/customer/{customerId}/services | Get customer services
-*V1Api* | [**v1CustomerCustomerIdServicesSkuCancelPut**](docs/V1Api.md#v1customercustomeridservicesskucancelput) | **PUT** /v1/customer/{customerId}/services/{sku}/cancel | Cancel customer services
-*V1Api* | [**v1StoreOrdersPost**](docs/V1Api.md#v1storeorderspost) | **POST** /v1/store/orders | Place an order
-*V1Api* | [**v1StoreProductsGet**](docs/V1Api.md#v1storeproductsget) | **GET** /v1/store/products | Get products
+*BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
+*CustomerApi* | [**customerCustomerIdServicesGet**](docs/CustomerApi.md#customercustomeridservicesget) | **GET** /customer/{customerId}/services | Get customer services
+*CustomerApi* | [**customerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#customercustomeridservicesskucancelput) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+*StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
+*StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
 
 
 <a name="documentation-for-models"></a>

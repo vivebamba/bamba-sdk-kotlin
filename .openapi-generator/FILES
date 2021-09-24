@@ -22,7 +22,6 @@ docs/SectionWhatNotIncludes.md
 docs/Service.md
 docs/StoreApi.md
 docs/Subscription.md
-docs/V1Api.md
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
@@ -31,7 +30,6 @@ settings.gradle
 src/main/kotlin/com/vivebamba/client/apis/BambaAdvisorApi.kt
 src/main/kotlin/com/vivebamba/client/apis/CustomerApi.kt
 src/main/kotlin/com/vivebamba/client/apis/StoreApi.kt
-src/main/kotlin/com/vivebamba/client/apis/V1Api.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiAbstractions.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiClient.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiInfrastructureResponse.kt
