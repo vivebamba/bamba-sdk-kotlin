@@ -16,11 +16,11 @@ import com.squareup.moshi.Json
 
 /**
  * 
- * @param sku 
+ * @param field 
  */
 
-data class OrderProducts (
-    @Json(name = "sku")
-    val sku: kotlin.String? = null
+data class InlineResponse422Errors (
+    @Json(name = "field")
+    val field: kotlin.collections.List<kotlin.String>? = null
 )
 

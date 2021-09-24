@@ -1,10 +1,10 @@
 
-# ProductBundleItems
+# InlineResponse422Errors
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**description** | **kotlin.String** | The description of bundle content |  [optional]
+**field** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
 
 
 

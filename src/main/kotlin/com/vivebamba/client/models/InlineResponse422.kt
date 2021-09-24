@@ -11,16 +11,17 @@
 */
 package com.vivebamba.client.models
 
+import com.vivebamba.client.models.InlineResponse422Errors
 
 import com.squareup.moshi.Json
 
 /**
  * 
- * @param sku 
+ * @param errors 
  */
 
-data class OrderProducts (
-    @Json(name = "sku")
-    val sku: kotlin.String? = null
+data class InlineResponse422 (
+    @Json(name = "errors")
+    val errors: kotlin.collections.List<InlineResponse422Errors>? = null
 )
 

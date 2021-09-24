@@ -4,13 +4,13 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**customerCustomerIdServicesGet**](CustomerApi.md#customerCustomerIdServicesGet) | **GET** /customer/{customerId}/services | Get customer services
-[**customerCustomerIdServicesSkuCancelPut**](CustomerApi.md#customerCustomerIdServicesSkuCancelPut) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+[**v1CustomerCustomerIdServicesGet**](CustomerApi.md#v1CustomerCustomerIdServicesGet) | **GET** /v1/customer/{customerId}/services | Get customer services
+[**v1CustomerCustomerIdServicesSkuCancelPut**](CustomerApi.md#v1CustomerCustomerIdServicesSkuCancelPut) | **PUT** /v1/customer/{customerId}/services/{sku}/cancel | Cancel customer services
 
 
-<a name="customerCustomerIdServicesGet"></a>
-# **customerCustomerIdServicesGet**
-> Subscription customerCustomerIdServicesGet(customerId)
+<a name="v1CustomerCustomerIdServicesGet"></a>
+# **v1CustomerCustomerIdServicesGet**
+> Subscription v1CustomerCustomerIdServicesGet(customerId)
 
 Get customer services
 
@@ -25,13 +25,13 @@ Get all customer services
 val apiInstance = CustomerApi()
 val customerId : kotlin.Int = 56 // kotlin.Int | Bamba customer unique identifier
 try {
-    val result : Subscription = apiInstance.customerCustomerIdServicesGet(customerId)
+    val result : Subscription = apiInstance.v1CustomerCustomerIdServicesGet(customerId)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CustomerApi#customerCustomerIdServicesGet")
+    println("4xx response calling CustomerApi#v1CustomerCustomerIdServicesGet")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CustomerApi#customerCustomerIdServicesGet")
+    println("5xx response calling CustomerApi#v1CustomerCustomerIdServicesGet")
     e.printStackTrace()
 }
 ```
@@ -58,9 +58,9 @@ Configure ApiKeyAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="customerCustomerIdServicesSkuCancelPut"></a>
-# **customerCustomerIdServicesSkuCancelPut**
-> Subscription customerCustomerIdServicesSkuCancelPut(customerId, sku)
+<a name="v1CustomerCustomerIdServicesSkuCancelPut"></a>
+# **v1CustomerCustomerIdServicesSkuCancelPut**
+> Subscription v1CustomerCustomerIdServicesSkuCancelPut(customerId, sku)
 
 Cancel customer services
 
@@ -76,13 +76,13 @@ val apiInstance = CustomerApi()
 val customerId : kotlin.String = customerId_example // kotlin.String | Bamba customer unique identifier
 val sku : kotlin.String = sku_example // kotlin.String | Service sku
 try {
-    val result : Subscription = apiInstance.customerCustomerIdServicesSkuCancelPut(customerId, sku)
+    val result : Subscription = apiInstance.v1CustomerCustomerIdServicesSkuCancelPut(customerId, sku)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
+    println("4xx response calling CustomerApi#v1CustomerCustomerIdServicesSkuCancelPut")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
+    println("5xx response calling CustomerApi#v1CustomerCustomerIdServicesSkuCancelPut")
     e.printStackTrace()
 }
 ```

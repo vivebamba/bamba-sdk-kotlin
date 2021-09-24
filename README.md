@@ -35,11 +35,16 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
-*CustomerApi* | [**customerCustomerIdServicesGet**](docs/CustomerApi.md#customercustomeridservicesget) | **GET** /customer/{customerId}/services | Get customer services
-*CustomerApi* | [**customerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#customercustomeridservicesskucancelput) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
-*StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
-*StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
+*BambaAdvisorApi* | [**v1AdvisorMessagePost**](docs/BambaAdvisorApi.md#v1advisormessagepost) | **POST** /v1/advisor/message | Send messages to the Bamba Advisor
+*CustomerApi* | [**v1CustomerCustomerIdServicesGet**](docs/CustomerApi.md#v1customercustomeridservicesget) | **GET** /v1/customer/{customerId}/services | Get customer services
+*CustomerApi* | [**v1CustomerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#v1customercustomeridservicesskucancelput) | **PUT** /v1/customer/{customerId}/services/{sku}/cancel | Cancel customer services
+*StoreApi* | [**v1StoreOrdersPost**](docs/StoreApi.md#v1storeorderspost) | **POST** /v1/store/orders | Place an order
+*StoreApi* | [**v1StoreProductsGet**](docs/StoreApi.md#v1storeproductsget) | **GET** /v1/store/products | Get products
+*V1Api* | [**v1AdvisorMessagePost**](docs/V1Api.md#v1advisormessagepost) | **POST** /v1/advisor/message | Send messages to the Bamba Advisor
+*V1Api* | [**v1CustomerCustomerIdServicesGet**](docs/V1Api.md#v1customercustomeridservicesget) | **GET** /v1/customer/{customerId}/services | Get customer services
+*V1Api* | [**v1CustomerCustomerIdServicesSkuCancelPut**](docs/V1Api.md#v1customercustomeridservicesskucancelput) | **PUT** /v1/customer/{customerId}/services/{sku}/cancel | Cancel customer services
+*V1Api* | [**v1StoreOrdersPost**](docs/V1Api.md#v1storeorderspost) | **POST** /v1/store/orders | Place an order
+*V1Api* | [**v1StoreProductsGet**](docs/V1Api.md#v1storeproductsget) | **GET** /v1/store/products | Get products
 
 
 <a name="documentation-for-models"></a>
@@ -51,12 +56,16 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.ErrorResponse](docs/ErrorResponse.md)
  - [com.vivebamba.client.models.InlineResponse200](docs/InlineResponse200.md)
  - [com.vivebamba.client.models.InlineResponse2001](docs/InlineResponse2001.md)
+ - [com.vivebamba.client.models.InlineResponse422](docs/InlineResponse422.md)
+ - [com.vivebamba.client.models.InlineResponse4221](docs/InlineResponse4221.md)
+ - [com.vivebamba.client.models.InlineResponse422Errors](docs/InlineResponse422Errors.md)
  - [com.vivebamba.client.models.Message](docs/Message.md)
  - [com.vivebamba.client.models.Order](docs/Order.md)
  - [com.vivebamba.client.models.OrderProducts](docs/OrderProducts.md)
  - [com.vivebamba.client.models.PaymentParams](docs/PaymentParams.md)
  - [com.vivebamba.client.models.Product](docs/Product.md)
- - [com.vivebamba.client.models.ProductBundleItems](docs/ProductBundleItems.md)
+ - [com.vivebamba.client.models.SectionWhatIncludes](docs/SectionWhatIncludes.md)
+ - [com.vivebamba.client.models.SectionWhatNotIncludes](docs/SectionWhatNotIncludes.md)
  - [com.vivebamba.client.models.Service](docs/Service.md)
  - [com.vivebamba.client.models.Subscription](docs/Subscription.md)
 
