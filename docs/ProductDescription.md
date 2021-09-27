@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **section** | **kotlin.String** | Section title |  [optional]
-**details** | [**ProductDetails**](ProductDetails.md) |  |  [optional]
+**details** | [**kotlin.collections.List&lt;ProductDetails&gt;**](ProductDetails.md) |  |  [optional]
 
 
 
