@@ -37,7 +37,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BambaAdvisorApi* | [**advisorMessagePost**](docs/BambaAdvisorApi.md#advisormessagepost) | **POST** /advisor/message | Send messages to the Bamba Advisor
 *CustomerApi* | [**customerCustomerIdServicesGet**](docs/CustomerApi.md#customercustomeridservicesget) | **GET** /customer/{customerId}/services | Get customer services
-*CustomerApi* | [**customerCustomerIdServicesSkuCancelPut**](docs/CustomerApi.md#customercustomeridservicesskucancelput) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+*CustomerApi* | [**customerCustomerIdServicesServiceIdCancelPut**](docs/CustomerApi.md#customercustomeridservicesserviceidcancelput) | **PUT** /customer/{customerId}/services/{serviceId}/cancel | Cancel customer services
 *StoreApi* | [**storeOrdersPost**](docs/StoreApi.md#storeorderspost) | **POST** /store/orders | Place an order
 *StoreApi* | [**storeProductsGet**](docs/StoreApi.md#storeproductsget) | **GET** /store/products | Get products
 
@@ -47,6 +47,7 @@ Class | Method | HTTP request | Description
 
  - [com.vivebamba.client.models.AdvisorMessageRequest](docs/AdvisorMessageRequest.md)
  - [com.vivebamba.client.models.AdvisorUser](docs/AdvisorUser.md)
+ - [com.vivebamba.client.models.CancellationResponse](docs/CancellationResponse.md)
  - [com.vivebamba.client.models.Customer](docs/Customer.md)
  - [com.vivebamba.client.models.ErrorResponse](docs/ErrorResponse.md)
  - [com.vivebamba.client.models.InlineResponse200](docs/InlineResponse200.md)
@@ -60,9 +61,6 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.PaymentParams](docs/PaymentParams.md)
  - [com.vivebamba.client.models.Product](docs/Product.md)
  - [com.vivebamba.client.models.ProductDescription](docs/ProductDescription.md)
- - [com.vivebamba.client.models.ProductDetails](docs/ProductDetails.md)
- - [com.vivebamba.client.models.Service](docs/Service.md)
- - [com.vivebamba.client.models.Subscription](docs/Subscription.md)
 
 
 <a name="documentation-for-authorization"></a>

@@ -5,12 +5,12 @@ All URIs are relative to *https://sandbox.vivebamba.com/v1*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**customerCustomerIdServicesGet**](CustomerApi.md#customerCustomerIdServicesGet) | **GET** /customer/{customerId}/services | Get customer services
-[**customerCustomerIdServicesSkuCancelPut**](CustomerApi.md#customerCustomerIdServicesSkuCancelPut) | **PUT** /customer/{customerId}/services/{sku}/cancel | Cancel customer services
+[**customerCustomerIdServicesServiceIdCancelPut**](CustomerApi.md#customerCustomerIdServicesServiceIdCancelPut) | **PUT** /customer/{customerId}/services/{serviceId}/cancel | Cancel customer services
 
 
 <a name="customerCustomerIdServicesGet"></a>
 # **customerCustomerIdServicesGet**
-> Subscription customerCustomerIdServicesGet(customerId)
+> kotlin.collections.List&lt;kotlin.Any&gt; customerCustomerIdServicesGet(customerId)
 
 Get customer services
 
@@ -23,9 +23,9 @@ Get all customer services
 //import com.vivebamba.client.models.*
 
 val apiInstance = CustomerApi()
-val customerId : kotlin.Int = 56 // kotlin.Int | Bamba customer unique identifier
+val customerId : java.util.UUID = d625aefa-73ba-4458-a107-5b3eea9f112b // java.util.UUID | Bamba customer unique identifier
 try {
-    val result : Subscription = apiInstance.customerCustomerIdServicesGet(customerId)
+    val result : kotlin.collections.List<kotlin.Any> = apiInstance.customerCustomerIdServicesGet(customerId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling CustomerApi#customerCustomerIdServicesGet")
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **kotlin.Int**| Bamba customer unique identifier |
+ **customerId** | [**java.util.UUID**](.md)| Bamba customer unique identifier |
 
 ### Return type
 
-[**Subscription**](Subscription.md)
+[**kotlin.collections.List&lt;kotlin.Any&gt;**](kotlin.Any.md)
 
 ### Authorization
 
@@ -58,9 +58,9 @@ Configure ApiKeyAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="customerCustomerIdServicesSkuCancelPut"></a>
-# **customerCustomerIdServicesSkuCancelPut**
-> Subscription customerCustomerIdServicesSkuCancelPut(customerId, sku)
+<a name="customerCustomerIdServicesServiceIdCancelPut"></a>
+# **customerCustomerIdServicesServiceIdCancelPut**
+> CancellationResponse customerCustomerIdServicesServiceIdCancelPut(customerId, serviceId)
 
 Cancel customer services
 
@@ -73,16 +73,16 @@ Cancel customer services
 //import com.vivebamba.client.models.*
 
 val apiInstance = CustomerApi()
-val customerId : kotlin.String = customerId_example // kotlin.String | Bamba customer unique identifier
-val sku : kotlin.String = sku_example // kotlin.String | Service sku
+val customerId : java.util.UUID = d625aefa-73ba-4458-a107-5b3eea9f112b // java.util.UUID | Bamba customer unique identifier
+val serviceId : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | Service Id
 try {
-    val result : Subscription = apiInstance.customerCustomerIdServicesSkuCancelPut(customerId, sku)
+    val result : CancellationResponse = apiInstance.customerCustomerIdServicesServiceIdCancelPut(customerId, serviceId)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
+    println("4xx response calling CustomerApi#customerCustomerIdServicesServiceIdCancelPut")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CustomerApi#customerCustomerIdServicesSkuCancelPut")
+    println("5xx response calling CustomerApi#customerCustomerIdServicesServiceIdCancelPut")
     e.printStackTrace()
 }
 ```
@@ -91,12 +91,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **kotlin.String**| Bamba customer unique identifier |
- **sku** | **kotlin.String**| Service sku |
+ **customerId** | [**java.util.UUID**](.md)| Bamba customer unique identifier |
+ **serviceId** | [**java.util.UUID**](.md)| Service Id |
 
 ### Return type
 
-[**Subscription**](Subscription.md)
+[**CancellationResponse**](CancellationResponse.md)
 
 ### Authorization
 

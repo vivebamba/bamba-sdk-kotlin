@@ -4,6 +4,7 @@ build.gradle
 docs/AdvisorMessageRequest.md
 docs/AdvisorUser.md
 docs/BambaAdvisorApi.md
+docs/CancellationResponse.md
 docs/Customer.md
 docs/CustomerApi.md
 docs/ErrorResponse.md
@@ -18,10 +19,7 @@ docs/OrderProducts.md
 docs/PaymentParams.md
 docs/Product.md
 docs/ProductDescription.md
-docs/ProductDetails.md
-docs/Service.md
 docs/StoreApi.md
-docs/Subscription.md
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
 gradlew
@@ -48,6 +46,7 @@ src/main/kotlin/com/vivebamba/client/infrastructure/Serializer.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/UUIDAdapter.kt
 src/main/kotlin/com/vivebamba/client/models/AdvisorMessageRequest.kt
 src/main/kotlin/com/vivebamba/client/models/AdvisorUser.kt
+src/main/kotlin/com/vivebamba/client/models/CancellationResponse.kt
 src/main/kotlin/com/vivebamba/client/models/Customer.kt
 src/main/kotlin/com/vivebamba/client/models/ErrorResponse.kt
 src/main/kotlin/com/vivebamba/client/models/InlineResponse200.kt
@@ -61,6 +60,3 @@ src/main/kotlin/com/vivebamba/client/models/OrderProducts.kt
 src/main/kotlin/com/vivebamba/client/models/PaymentParams.kt
 src/main/kotlin/com/vivebamba/client/models/Product.kt
 src/main/kotlin/com/vivebamba/client/models/ProductDescription.kt
-src/main/kotlin/com/vivebamba/client/models/ProductDetails.kt
-src/main/kotlin/com/vivebamba/client/models/Service.kt
-src/main/kotlin/com/vivebamba/client/models/Subscription.kt
