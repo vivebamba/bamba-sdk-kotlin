@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sku** | **kotlin.String** | A unique identifier for the product variant |  [optional]
 **name** | **kotlin.String** | The name of the product |  [optional]
+**slug** | **kotlin.String** | Product slug |  [optional]
 **price** | **kotlin.Double** | The price of the product |  [optional]
 **image** | **kotlin.String** | Image of the product |  [optional]
 **brief** | **kotlin.String** | Plan benefit summary |  [optional]

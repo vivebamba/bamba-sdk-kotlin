@@ -23,7 +23,7 @@ Get all customer services
 //import com.vivebamba.client.models.*
 
 val apiInstance = CustomerApi()
-val customerId : java.util.UUID = d625aefa-73ba-4458-a107-5b3eea9f112b // java.util.UUID | Bamba customer unique identifier
+val customerId : kotlin.String = d625aefa-73ba-4458-a107-5b3eea9f112b // kotlin.String | Bamba customer unique identifier
 try {
     val result : kotlin.collections.List<kotlin.Any> = apiInstance.customerCustomerIdServicesGet(customerId)
     println(result)
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | [**java.util.UUID**](.md)| Bamba customer unique identifier |
+ **customerId** | **kotlin.String**| Bamba customer unique identifier |
 
 ### Return type
 
@@ -73,8 +73,8 @@ Cancel customer services
 //import com.vivebamba.client.models.*
 
 val apiInstance = CustomerApi()
-val customerId : java.util.UUID = d625aefa-73ba-4458-a107-5b3eea9f112b // java.util.UUID | Bamba customer unique identifier
-val serviceId : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | Service Id
+val customerId : kotlin.String = d625aefa-73ba-4458-a107-5b3eea9f112b // kotlin.String | The customer UUID assigned by Bamba
+val serviceId : kotlin.String = z625aefa-73ba-4458-a107-5b3eea9526a // kotlin.String | The service UUID to cancel assigned by Bamba
 try {
     val result : CancellationResponse = apiInstance.customerCustomerIdServicesServiceIdCancelPut(customerId, serviceId)
     println(result)
@@ -91,8 +91,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | [**java.util.UUID**](.md)| Bamba customer unique identifier |
- **serviceId** | [**java.util.UUID**](.md)| Service Id |
+ **customerId** | **kotlin.String**| The customer UUID assigned by Bamba |
+ **serviceId** | **kotlin.String**| The service UUID to cancel assigned by Bamba |
 
 ### Return type
 

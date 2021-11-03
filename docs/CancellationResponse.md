@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | [**java.util.UUID**](java.util.UUID.md) |  |  [optional]
+**id** | **kotlin.String** | UUID of the canceled service |  [optional]
 **name** | **kotlin.String** | Benefit |  [optional]
 **brief** | **kotlin.String** | Plan benefit summary |  [optional]
 **state** | **kotlin.String** | Cancellation status |  [optional]
