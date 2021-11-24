@@ -12,8 +12,6 @@
 package com.vivebamba.client.apis
 
 import com.vivebamba.client.models.CancellationResponse
-import com.vivebamba.client.models.ErrorResponse
-import com.vivebamba.client.models.InlineResponse4221
 
 import com.vivebamba.client.infrastructure.ApiClient
 import com.vivebamba.client.infrastructure.ClientException
@@ -25,9 +23,9 @@ import com.vivebamba.client.infrastructure.RequestConfig
 import com.vivebamba.client.infrastructure.RequestMethod
 import com.vivebamba.client.infrastructure.ResponseType
 import com.vivebamba.client.infrastructure.Success
-import com.vivebamba.client.infrastructure.toMultiValue
+import com.vivebamba.client.models.CustomerService
 
-class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) {
+class CustomerApi(basePath: String = defaultBasePath) : ApiClient(basePath) {
     companion object {
         @JvmStatic
         val defaultBasePath: String by lazy {
@@ -46,15 +44,15 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     */
     @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun customerCustomerIdServicesGet(customerId: kotlin.String) : kotlin.collections.List<kotlin.Any> {
+    fun customerCustomerIdServicesGet(customerId: String) : List<CustomerService> {
         val localVariableConfig = customerCustomerIdServicesGetRequestConfig(customerId = customerId)
 
-        val localVarResponse = request<kotlin.collections.List<kotlin.Any>>(
+        val localVarResponse = request<List<CustomerService>>(
             localVariableConfig
         )
 
         return when (localVarResponse.responseType) {
-            ResponseType.Success -> (localVarResponse as Success<*>).data as kotlin.collections.List<kotlin.Any>
+            ResponseType.Success -> (localVarResponse as Success<*>).data as List<CustomerService>
             ResponseType.Informational -> throw UnsupportedOperationException("Client does not support Informational responses.")
             ResponseType.Redirection -> throw UnsupportedOperationException("Client does not support Redirection responses.")
             ResponseType.ClientError -> {
@@ -69,25 +67,26 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     }
 
     /**
-    * To obtain the request config of the operation customerCustomerIdServicesGet
-    *
-    * @param customerId Bamba customer unique identifier 
-    * @return RequestConfig
-    */
-    fun customerCustomerIdServicesGetRequestConfig(customerId: kotlin.String) : RequestConfig {
-        val localVariableBody: kotlin.Any? = null
+     * To obtain the request config of the operation customerCustomerIdServicesGet
+     *
+     * @param customerId Bamba customer unique identifier
+     * @return RequestConfig
+     */
+    fun customerCustomerIdServicesGetRequestConfig(customerId: String): RequestConfig {
+        val localVariableBody: Any? = null
         val localVariableQuery: MultiValueMap = mutableMapOf()
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
-        
-        val localVariableConfig = RequestConfig(
+
+        return RequestConfig(
             method = RequestMethod.GET,
-            path = "/customer/{customerId}/services".replace("{"+"customerId"+"}", "$customerId"),
+            path = "/customer/{customerId}/services".replace(
+                "{" + "customerId" + "}",
+                "$customerId"
+            ),
             query = localVariableQuery,
             headers = localVariableHeaders,
             body = localVariableBody
         )
-
-        return localVariableConfig
     }
 
     /**
@@ -102,7 +101,7 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     */
     @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun customerCustomerIdServicesServiceIdCancelPut(customerId: kotlin.String, serviceId: kotlin.String) : CancellationResponse {
+    fun customerCustomerIdServicesServiceIdCancelPut(customerId: String, serviceId: String) : CancellationResponse {
         val localVariableConfig = customerCustomerIdServicesServiceIdCancelPutRequestConfig(customerId = customerId, serviceId = serviceId)
 
         val localVarResponse = request<CancellationResponse>(
@@ -125,26 +124,30 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     }
 
     /**
-    * To obtain the request config of the operation customerCustomerIdServicesServiceIdCancelPut
-    *
-    * @param customerId The customer UUID assigned by Bamba 
-    * @param serviceId The service UUID to cancel assigned by Bamba 
-    * @return RequestConfig
-    */
-    fun customerCustomerIdServicesServiceIdCancelPutRequestConfig(customerId: kotlin.String, serviceId: kotlin.String) : RequestConfig {
-        val localVariableBody: kotlin.Any? = null
+     * To obtain the request config of the operation customerCustomerIdServicesServiceIdCancelPut
+     *
+     * @param customerId The customer UUID assigned by Bamba
+     * @param serviceId The service UUID to cancel assigned by Bamba
+     * @return RequestConfig
+     */
+    fun customerCustomerIdServicesServiceIdCancelPutRequestConfig(
+        customerId: String,
+        serviceId: String
+    ): RequestConfig {
+        val localVariableBody: Any? = null
         val localVariableQuery: MultiValueMap = mutableMapOf()
         val localVariableHeaders: MutableMap<String, String> = mutableMapOf()
-        
-        val localVariableConfig = RequestConfig(
+
+        return RequestConfig(
             method = RequestMethod.PUT,
-            path = "/customer/{customerId}/services/{serviceId}/cancel".replace("{"+"customerId"+"}", "$customerId").replace("{"+"serviceId"+"}", "$serviceId"),
+            path = "/customer/{customerId}/services/{serviceId}/cancel".replace(
+                "{" + "customerId" + "}",
+                "$customerId"
+            ).replace("{" + "serviceId" + "}", "$serviceId"),
             query = localVariableQuery,
             headers = localVariableHeaders,
             body = localVariableBody
         )
-
-        return localVariableConfig
     }
 
 }
