@@ -34,7 +34,7 @@ data class Order (
     @Json(name = "paymentParams")
     val paymentParams: PaymentParams? = null,
     /* Its a unique identifier for the transaction/payment on your app */
-    @Json(name = "transactionId")
-    val transactionId: kotlin.String? = null
+    //@Json(name = "transactionId")
+    //val transactionId: kotlin.String? = null
 )
 
