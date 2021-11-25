@@ -101,15 +101,15 @@ class CustomerApi(basePath: String = defaultBasePath) : ApiClient(basePath) {
     */
     @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun customerCustomerIdServicesServiceIdCancelPut(customerId: String, serviceId: String) : CancellationResponse {
+    fun customerCustomerIdServicesServiceIdCancelPut(customerId: String, serviceId: String) : List<CancellationResponse> {
         val localVariableConfig = customerCustomerIdServicesServiceIdCancelPutRequestConfig(customerId = customerId, serviceId = serviceId)
 
-        val localVarResponse = request<CancellationResponse>(
+        val localVarResponse = request<List<CancellationResponse>>(
             localVariableConfig
         )
 
         return when (localVarResponse.responseType) {
-            ResponseType.Success -> (localVarResponse as Success<*>).data as CancellationResponse
+            ResponseType.Success -> (localVarResponse as Success<*>).data as List<CancellationResponse>
             ResponseType.Informational -> throw UnsupportedOperationException("Client does not support Informational responses.")
             ResponseType.Redirection -> throw UnsupportedOperationException("Client does not support Redirection responses.")
             ResponseType.ClientError -> {
