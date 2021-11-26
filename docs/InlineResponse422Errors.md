@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**field** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
+**&#x60;field&#x60;** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
 
 
 

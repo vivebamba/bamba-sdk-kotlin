@@ -31,7 +31,6 @@ src/main/kotlin/com/vivebamba/client/apis/StoreApi.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiAbstractions.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiClient.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ApiInfrastructureResponse.kt
-src/main/kotlin/com/vivebamba/client/infrastructure/ApplicationDelegates.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/BigDecimalAdapter.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/BigIntegerAdapter.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ByteArrayAdapter.kt
@@ -43,6 +42,7 @@ src/main/kotlin/com/vivebamba/client/infrastructure/RequestConfig.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/RequestMethod.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/ResponseExtensions.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/Serializer.kt
+src/main/kotlin/com/vivebamba/client/infrastructure/URIAdapter.kt
 src/main/kotlin/com/vivebamba/client/infrastructure/UUIDAdapter.kt
 src/main/kotlin/com/vivebamba/client/models/AdvisorMessageRequest.kt
 src/main/kotlin/com/vivebamba/client/models/AdvisorUser.kt
