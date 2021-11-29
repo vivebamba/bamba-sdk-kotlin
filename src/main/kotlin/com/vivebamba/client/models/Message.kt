@@ -3,7 +3,7 @@
  *
  * SDK for Bamba API
  *
- * The version of the OpenAPI document: 1.3.4
+ * The version of the OpenAPI document: 1.3.5
  * Contact: desarrollo@vivebamba.com
  *
  * Please note:

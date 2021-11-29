@@ -3,7 +3,7 @@
  *
  * SDK for Bamba API
  *
- * The version of the OpenAPI document: 1.3.4
+ * The version of the OpenAPI document: 1.3.5
  * Contact: desarrollo@vivebamba.com
  *
  * Please note:
@@ -21,6 +21,7 @@
 package com.vivebamba.client.apis
 
 import com.vivebamba.client.models.CancellationResponse
+import com.vivebamba.client.models.CustomerServices
 import com.vivebamba.client.models.ErrorResponse
 import com.vivebamba.client.models.InlineResponse4221
 
@@ -40,7 +41,7 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     companion object {
         @JvmStatic
         val defaultBasePath: String by lazy {
-            System.getProperties().getProperty("com.vivebamba.client.baseUrl", "https://sandbox.vivebamba.com/v1")
+            System.getProperties().getProperty("com.vivebamba.client.baseUrl", "https://sandbox.api.vivebamba.com/v1")
         }
     }
 
@@ -48,22 +49,22 @@ class CustomerApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePat
     * Get customer services
     * Get all customer services
     * @param customerId Bamba customer unique identifier 
-    * @return kotlin.collections.List<kotlin.Any>
+    * @return kotlin.collections.List<CustomerServices>
     * @throws UnsupportedOperationException If the API returns an informational or redirection response
     * @throws ClientException If the API returns a client error response
     * @throws ServerException If the API returns a server error response
     */
     @Suppress("UNCHECKED_CAST")
     @Throws(UnsupportedOperationException::class, ClientException::class, ServerException::class)
-    fun customerCustomerIdServicesGet(customerId: kotlin.String) : kotlin.collections.List<kotlin.Any> {
+    fun customerCustomerIdServicesGet(customerId: kotlin.String) : kotlin.collections.List<CustomerServices> {
         val localVariableConfig = customerCustomerIdServicesGetRequestConfig(customerId = customerId)
 
-        val localVarResponse = request<Unit, kotlin.collections.List<kotlin.Any>>(
+        val localVarResponse = request<Unit, kotlin.collections.List<CustomerServices>>(
             localVariableConfig
         )
 
         return when (localVarResponse.responseType) {
-            ResponseType.Success -> (localVarResponse as Success<*>).data as kotlin.collections.List<kotlin.Any>
+            ResponseType.Success -> (localVarResponse as Success<*>).data as kotlin.collections.List<CustomerServices>
             ResponseType.Informational -> throw UnsupportedOperationException("Client does not support Informational responses.")
             ResponseType.Redirection -> throw UnsupportedOperationException("Client does not support Redirection responses.")
             ResponseType.ClientError -> {

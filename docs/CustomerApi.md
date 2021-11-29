@@ -1,6 +1,6 @@
 # CustomerApi
 
-All URIs are relative to *https://sandbox.vivebamba.com/v1*
+All URIs are relative to *https://sandbox.api.vivebamba.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="customerCustomerIdServicesGet"></a>
 # **customerCustomerIdServicesGet**
-> kotlin.collections.List&lt;kotlin.Any&gt; customerCustomerIdServicesGet(customerId)
+> kotlin.collections.List&lt;CustomerServices&gt; customerCustomerIdServicesGet(customerId)
 
 Get customer services
 
@@ -25,7 +25,7 @@ Get all customer services
 val apiInstance = CustomerApi()
 val customerId : kotlin.String = d625aefa-73ba-4458-a107-5b3eea9f112b // kotlin.String | Bamba customer unique identifier
 try {
-    val result : kotlin.collections.List<kotlin.Any> = apiInstance.customerCustomerIdServicesGet(customerId)
+    val result : kotlin.collections.List<CustomerServices> = apiInstance.customerCustomerIdServicesGet(customerId)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling CustomerApi#customerCustomerIdServicesGet")
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**kotlin.collections.List&lt;kotlin.Any&gt;**](kotlin.Any.md)
+[**kotlin.collections.List&lt;CustomerServices&gt;**](CustomerServices.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
 # BambaAdvisorApi
 
-All URIs are relative to *https://sandbox.vivebamba.com/v1*
+All URIs are relative to *https://sandbox.api.vivebamba.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

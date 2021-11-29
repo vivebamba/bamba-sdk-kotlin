@@ -31,7 +31,7 @@ This runs all tests and packages the library.
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://sandbox.vivebamba.com/v1*
+All URIs are relative to *https://sandbox.api.vivebamba.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -49,6 +49,7 @@ Class | Method | HTTP request | Description
  - [com.vivebamba.client.models.AdvisorUser](docs/AdvisorUser.md)
  - [com.vivebamba.client.models.CancellationResponse](docs/CancellationResponse.md)
  - [com.vivebamba.client.models.Customer](docs/Customer.md)
+ - [com.vivebamba.client.models.CustomerServices](docs/CustomerServices.md)
  - [com.vivebamba.client.models.ErrorResponse](docs/ErrorResponse.md)
  - [com.vivebamba.client.models.InlineResponse200](docs/InlineResponse200.md)
  - [com.vivebamba.client.models.InlineResponse2001](docs/InlineResponse2001.md)

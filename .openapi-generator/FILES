@@ -7,6 +7,7 @@ docs/BambaAdvisorApi.md
 docs/CancellationResponse.md
 docs/Customer.md
 docs/CustomerApi.md
+docs/CustomerServices.md
 docs/ErrorResponse.md
 docs/InlineResponse200.md
 docs/InlineResponse2001.md
@@ -48,6 +49,7 @@ src/main/kotlin/com/vivebamba/client/models/AdvisorMessageRequest.kt
 src/main/kotlin/com/vivebamba/client/models/AdvisorUser.kt
 src/main/kotlin/com/vivebamba/client/models/CancellationResponse.kt
 src/main/kotlin/com/vivebamba/client/models/Customer.kt
+src/main/kotlin/com/vivebamba/client/models/CustomerServices.kt
 src/main/kotlin/com/vivebamba/client/models/ErrorResponse.kt
 src/main/kotlin/com/vivebamba/client/models/InlineResponse200.kt
 src/main/kotlin/com/vivebamba/client/models/InlineResponse2001.kt

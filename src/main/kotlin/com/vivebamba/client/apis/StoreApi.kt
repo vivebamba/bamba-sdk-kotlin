@@ -3,7 +3,7 @@
  *
  * SDK for Bamba API
  *
- * The version of the OpenAPI document: 1.3.4
+ * The version of the OpenAPI document: 1.3.5
  * Contact: desarrollo@vivebamba.com
  *
  * Please note:
@@ -42,7 +42,7 @@ class StoreApi(basePath: kotlin.String = defaultBasePath) : ApiClient(basePath) 
     companion object {
         @JvmStatic
         val defaultBasePath: String by lazy {
-            System.getProperties().getProperty("com.vivebamba.client.baseUrl", "https://sandbox.vivebamba.com/v1")
+            System.getProperties().getProperty("com.vivebamba.client.baseUrl", "https://sandbox.api.vivebamba.com/v1")
         }
     }
 
